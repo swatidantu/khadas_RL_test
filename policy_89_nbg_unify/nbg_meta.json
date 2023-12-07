@@ -1,0 +1,31 @@
+{
+    "Inputs": {
+        "input_10": {
+            "name": "input",
+            "shape": [
+                1,
+                23
+            ],
+            "format": "nchw",
+            "dtype": "float16"
+        }
+    },
+    "Outputs": {
+        "attach_Gemm_/action_net/Gemm/out0_0": {
+            "name": "attach_Gemm_/action_net/Gemm/out0",
+            "shape": [
+                1,
+                4
+            ],
+            "format": "nchw",
+            "quantizer": "dynamic_fixed_point",
+            "quantize": {
+                "qtype": "i16",
+                "fl": [
+                    16
+                ]
+            }
+        }
+    },
+    "Recurrent_connections": {}
+}
